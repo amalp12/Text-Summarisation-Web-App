@@ -4,10 +4,6 @@
 	box-sizing: border-box;
 }
 
-.body {
-	/*background-color: rgba(0, 0, 0, 0.904);*/
-	background-image: url("{{ url_for('static', filename='images/metis.jpg') }}");
-}
 
 .navbar_heading {
 	margin-top: 0rem;
