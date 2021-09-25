@@ -5,52 +5,68 @@
 }
 
 .body {
-	background-color: rgba(0, 0, 0, 0.904);
+	/*background-color: rgba(0, 0, 0, 0.904);*/
+	background-image: url("{{ url_for('static', filename='images/metis.jpg') }}");
 }
 
 .navbar_heading {
 	margin-top: 0rem;
 	font-size: 40px;
-	color: white;
 	animation-name: moveInleft;
 	animation-duration: 2s;
+	cursor: pointer;
 }
 
 .navbar_home {
-	margin-left: 5rem;
-	margin-top: 1rem;
-	font-size: 20px;
-	color: white;
-	animation-name: moveInleft;
-	animation-duration: 2s;
-}
-.navbar_home:hover {
-	color: aqua;
-}
-
-.navbar_text {
 	margin-left: 1rem;
 	margin-top: 1rem;
 	font-size: 20px;
+	font-weight: 600;
+	animation-name: moveInleft;
+	animation-duration: 2s;
+}
+
+.navbar_text {
+	margin-left: 0.5rem;
+	margin-top: 1rem;
+	font-size: 20px;
 	color: white;
+	font-weight: 600;
 	animation-name: moveInleft;
 	animation-duration: 2s;
 }
 .navbar_text:hover {
-	color: aqua;
+	color: rgb(143, 142, 142);
 }
 
 .navbar_log {
 	margin-bottom: 0;
 	font-size: 20px;
 	color: white;
+	font-weight: 500;
 	animation-name: moveInleft;
 	animation-duration: 2s;
 	padding-bottom: 0;
+	margin-left: 27rem;
 }
 .navbar_log:hover {
 	color: rgb(143, 142, 142);
 }
+
+.navbar_log_index {
+	margin-bottom: 0;
+	font-size: 20px;
+	color: white;
+	font-weight: 500;
+	animation-name: moveInleft;
+	animation-duration: 2s;
+	padding-bottom: 0;
+	margin-left: 42rem;
+}
+.navbar_log_index:hover {
+	color: rgb(143, 142, 142);
+}
+
 .navbar_log_in {
 	margin-right: 1rem;
 }
@@ -80,23 +96,71 @@ button {
 }
 .custom-toggler .navbar-toggler-icon {
 	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(256, 256, 256, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+	margin-top: 1rem;
 }
 
-.container {
-	background-color: rgb(0, 183, 255);
+.form_main {
+	/*background-color: rgb(0, 183, 255);*/
+	background-image: linear-gradient(to right bottom, rgba(0, 183, 255, 0.8), rgba(116, 201, 235, 0.8));
 	padding: 1rem;
-	border-radius: 0.25rem;
+	border-radius: 0.5rem;
+	font-weight: 600;
+	animation-name: fadeIn;
+	animation-duration: 2s;
+}
+
+.output_main {
+	/*background-color: rgb(0, 183, 255);*/
+	background-image: linear-gradient(to right bottom, rgba(0, 183, 255, 0.8), rgba(116, 201, 235, 0.8));
+	padding: 1rem;
+	border-radius: 0.5rem;
 	font-weight: 600;
 }
 
 .btn {
 	margin-top: 0;
+	text-decoration: none;
+	padding: 8px 10px;
+	border-radius: 3px;
+	border: 2px;
+	color: #fff;
+	font-weight: 400;
+	font-size: 16px;
+	background: #8e49e8;
+	transition: all 0.3s ease;
 }
-.output {
+.btn:hover {
+	background: #721ce3;
+	color: #fff;
+	box-shadow: 0 0.5em 0.5em -0.4em #721ce3;
+	transform: translateY(-0.25em);
+}
+
+.form-control {
+	border-radius: 0.5rem;
+}
+
+.results {
 	background-color: rgb(240, 232, 232);
 	padding: 1rem;
 	border-radius: 0.25rem;
 }
+
+#footer {
+	padding: 7% 3% 5%;
+	text-align: center;
+	font-family: "Montserrat";
+	font-size: 1.6rem;
+	color: #ffffff;
+}
+
+.footerdiv {
+	background-color: #000000;
+	margin-bottom: 2rem;
+	width: 100%;
+	margin-bottom: 0;
+}
+
 @keyframes fadeIn {
 	0% {
 		opacity: 0;
