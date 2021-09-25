@@ -2,6 +2,7 @@
 from typing import Text
 from flask import Flask, render_template, request, redirect
 import flask
+from model.TEXT_SUMMARIZATION_BERT import model_forward
 #from requests import request
 
 import requests
@@ -23,6 +24,18 @@ app = Flask(__name__)
 def index():
 
     return render_template("index.html")
+
+
+@app.route("/", methods = ["POST"])
+def search():
+    if request.method == 'POST':
+        
+        text = request.form['search-textbox']
+        summary = model_forward(text)
+        
+        return redirect(flask.url_for('search_page',  summary = summary))
+
+
 
 if __name__ == 'main':
     app.run(debug=True)

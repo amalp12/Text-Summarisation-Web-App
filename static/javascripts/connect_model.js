@@ -1,0 +1,1 @@
+let searchQuery = summary;
