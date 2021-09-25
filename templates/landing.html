@@ -5,9 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-<<<<<<< HEAD
-    <link rel="stylesheet" href="../css/styles.css">
-=======
     <link rel="stylesheet" href="{{ url_for('static', filename='stylesheets/styles.css') }}">
     
     
@@ -22,18 +19,13 @@
     
     
     
->>>>>>> Summary Commit
     <title>Landing Page</title>
 </head>
 <body class="body">
     <nav class="navbar navbar-expand-lg navbar_main">
         <div class="logo-box">
             <a href="#" class="logo-box-link",id="logo-box-link">
-<<<<<<< HEAD
-               <img src="../img/logo-white.png" alt="Logo" class="logo">
-=======
                <img src="{{ url_for('static', filename='images/logo-white.png') }}" alt="Logo" class="logo">
->>>>>>> Summary Commit
             </a>
         </div>
         <a class="navbar-brand text-light navbar_heading">Summarizer</a>
@@ -44,11 +36,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-<<<<<<< HEAD
-              <a class="nav-link text-light navbar_home" href="../templates/index.html">Home <span class="sr-only">(current)</span></a>
-=======
               <a class="nav-link text-light navbar_home" href= "{{url_for('landing')}}" >Home <span class="sr-only">(current)</span></a>
->>>>>>> Summary Commit
             </li>
             <li class="nav-item">
               <a class="nav-link text-light navbar_text" href="#">Features</a>
@@ -63,13 +51,9 @@
     <div class="container">
         <label for="outputlabel">Summary:</label>
         <div class="output">
-<<<<<<< HEAD
-            put the output here..
-=======
             <div class="results" id="results-body">
   
             </div>
->>>>>>> Summary Commit
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
