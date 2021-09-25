@@ -86,10 +86,16 @@ button {
 	background-color: rgb(0, 183, 255);
 	padding: 1rem;
 	border-radius: 0.25rem;
+	font-weight: 600;
 }
 
 .btn {
 	margin-top: 0;
+}
+.output {
+	background-color: rgb(240, 232, 232);
+	padding: 1rem;
+	border-radius: 0.25rem;
 }
 @keyframes fadeIn {
 	0% {
