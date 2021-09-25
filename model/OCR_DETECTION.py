@@ -65,7 +65,7 @@ def get_word(letter):
     
 saved_model=tensorflow.keras.models.load_model("model/OCR_DETECTION.h5")
 
-letter,image = get_letters("../input/handwriting-recognition/train_v2/train/TRAIN_00023.jpg")
+letter,image = get_letters("model/TRAIN_00001.jpg")
 word = get_word(letter)
 print(word)
 plt.imshow(image)
