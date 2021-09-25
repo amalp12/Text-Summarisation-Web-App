@@ -16,9 +16,31 @@ app = Flask(__name__)
 #db = SQLAlchemy(app)
 
 #SERVER_URL = 'http://127.0.0.1:5000/'
+"""
+
+############### Model Start #####################
+import torch
+from transformers import pipeline
+
+summarizer = pipeline("summarization")
+
+def model_forward(article): 
+    summary = '' 
+    for i in range (int(len(article)/1024)):
+        summary+=summarizer(article[1024*(i-1):1024*i], max_length=100, min_length=50, do_sample=False)[0]
+        #print(summary['summary_text'])
+    return summary
+    
+
+############### Model End #################
+"""
+
+@app.route('/landing' )#, methods = ['GET','POST' ])
+def landing():
+
+    return render_template("landing.html")
 
 
-        
 
 @app.route('/' , methods = ['GET','POST' ])
 def index():
@@ -26,15 +48,15 @@ def index():
     return render_template("index.html")
 
 
-@app.route("/", methods = ["POST"])
-def search():
+@app.route("/submit/", methods = ["POST"])
+def submit_text():
     if request.method == 'POST':
         
-        text = request.form['search-textbox']
+        text = request.form['submit-textbox']
         summary = model_forward(text)
+        print(summary)
         
-        return redirect(flask.url_for('search_page',  summary = summary))
-
+        return render_template("landing.html" ,  summary = summary)
 
 
 if __name__ == 'main':

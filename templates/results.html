@@ -5,35 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-<<<<<<< HEAD
-    <link rel="stylesheet" href="../css/styles.css">
-=======
     <link rel="stylesheet" href="{{ url_for('static', filename='stylesheets/styles.css') }}">
-    
-    
-    
+
     <script type="text/javascript">
-        let summary ='{{ summary }}';
+      let summary ='{{ summary }}';
     </script>
     <script type="text/javascript" src="{{ url_for('static', filename='javascripts/connect_model.js') }}"></script>
-  
-    
-    
-    
-    
-    
->>>>>>> Summary Commit
-    <title>Landing Page</title>
+
+
+    <title>Summarizer</title>
 </head>
 <body class="body">
-    <nav class="navbar navbar-expand-lg navbar_main">
+    <!--nav class="navbar navbar-expand-lg navbar_main">
         <div class="logo-box">
             <a href="#" class="logo-box-link",id="logo-box-link">
-<<<<<<< HEAD
-               <img src="../img/logo-white.png" alt="Logo" class="logo">
-=======
                <img src="{{ url_for('static', filename='images/logo-white.png') }}" alt="Logo" class="logo">
->>>>>>> Summary Commit
             </a>
         </div>
         <a class="navbar-brand text-light navbar_heading">Summarizer</a>
@@ -44,11 +30,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-<<<<<<< HEAD
-              <a class="nav-link text-light navbar_home" href="../templates/index.html">Home <span class="sr-only">(current)</span></a>
-=======
-              <a class="nav-link text-light navbar_home" href= "{{url_for('landing')}}" >Home <span class="sr-only">(current)</span></a>
->>>>>>> Summary Commit
+              <a class="nav-link text-light navbar_home" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
               <a class="nav-link text-light navbar_text" href="#">Features</a>
@@ -59,21 +41,13 @@
             <button class="btn btn-outline-success my-2 my-sm-0 navbar-signup" type="submit">Sign Up</button>
           </form>
         </div>
-    </nav>
-    <div class="container">
-        <label for="outputlabel">Summary:</label>
-        <div class="output">
-<<<<<<< HEAD
-            put the output here..
-=======
-            <div class="results" id="results-body">
+      </nav>
+      
+      <script src="https://code.jquery.c  om/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script-->
+        <div class="results" id="results-body">
   
-            </div>
->>>>>>> Summary Commit
         </div>
-    </div>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
 </body>
 </html>
