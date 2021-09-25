@@ -63,7 +63,7 @@ def get_word(letter):
     word = "".join(letter)
     return word
     
-saved_model=tensorflow.keras.models.load_model("path of h5 file")
+saved_model=tensorflow.keras.models.load_model("model/OCR_DETECTION.h5")
 
 letter,image = get_letters("../input/handwriting-recognition/train_v2/train/TRAIN_00023.jpg")
 word = get_word(letter)
