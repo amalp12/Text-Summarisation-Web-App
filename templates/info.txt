@@ -1,0 +1,5 @@
+Put All the HTML files used in this web app in this folder
+a sample blank 'index.html' has already been created for reference. 
+Either copy paste code in that file or create another file  if you wish.
+
+Note that you are free to create more folders inside this directory to organise different webpages.

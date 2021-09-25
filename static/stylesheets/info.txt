@@ -1,0 +1,3 @@
+Put All the CSS files used in this web app in this folder
+a sample blank 'styles.css' has already been created for reference. 
+Either copy paste code in that file or create another file  if you wish.
