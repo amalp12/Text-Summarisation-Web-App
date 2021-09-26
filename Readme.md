@@ -17,11 +17,17 @@ export FLASK_APP-app.py
 flask run
 ```
 ## Images
-![alt text](https://github.com/amalp12/Text-Summarisation-Web-App/tree/main/screenshots/image1.jpg?raw=true)
+Enter the paragraph you want to be summarized
 
-![alt text](https://github.com/amalp12/Text-Summarisation-Web-App/tree/main/screenshots/image2.jpg?raw=true)
+![ScreenShot](https://raw.githubusercontent.com/amalp12/Text-Summarisation-Web-App/main/screenshots/image1.jpg)
 
-![alt text](https://github.com/amalp12/Text-Summarisation-Web-App/tree/main/screenshots/image3.jpg?raw=true)
+Press the submit button
+![ScreenShot](https://raw.githubusercontent.com/amalp12/Text-Summarisation-Web-App/main/screenshots/image2.jpg)
+
+The Summary of the paragraph provided will be displayed
+![ScreenShot](https://raw.githubusercontent.com/amalp12/Text-Summarisation-Web-App/main/screenshots/image3.jpg)
+
+Note that the time taken to show the results can vary according to the capabilities of the hosting device.
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
