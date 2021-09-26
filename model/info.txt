@@ -1,4 +1,0 @@
-Put all the files related to the Machine Learning Model in this folder as a .py file that runs without errors.
-Jupyter notbooks are not allowed.
-
-Note that you are allowed to make folders in this directory to organise code if there are many files.

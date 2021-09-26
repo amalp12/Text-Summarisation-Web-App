@@ -1,2 +1,0 @@
-Put All the Javascript files
- used in this web app in this folder

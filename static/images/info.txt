@@ -1,1 +1,0 @@
-Put All the images used in this web app in this folder
