@@ -1,19 +1,20 @@
-import torch
+
 from transformers import pipeline
 
-summarizer = pipeline("summarization")
+summarizer = pipeline("summarization", model= 't5-small', tokenizer= 't5-small' )
 
 def model_forward(article): 
     summary =''
-    if (len(article)>1024):
-        for i in range (0,int(len(article)/1024)-1):
-            if (i== int(len(article)/1024)-1):
-              summ =summarizer(article[1024*(i):], max_length=100, min_length=3, do_sample=False)[0]    
+    max_input_length = summarizer.tokenizer.model_max_length
+    if (len(article)>max_input_length):
+        for i in range (0,int(len(article)/max_input_length)-1):
+            if (i== int(len(article)/max_input_length)-1):
+              summ =summarizer(article[max_input_length*(i):], max_length=int(len(article[max_input_length*(i):])*1/2), min_length=3, do_sample=False)[0]    
             else:
-              summ =summarizer(article[1024*(i):1024*(i+1)], max_length=100, min_length=3, do_sample=False)[0]
+              summ =summarizer(article[max_input_length*(i):max_input_length*(i+1)], max_length=int(len(article[max_input_length*(i):max_input_length*(i+1)])*1/2), min_length=3, do_sample=False)[0]
             summary += ''+summ['summary_text']
             #print(summary['summary_text'])
     else:
-        summary =  summarizer(article[:], max_length=100, min_length=3  , do_sample=False)[0]['summary_text']
+        summary =  summarizer(article[:], max_length=int(len(article[:])*1/2), min_length=3  , do_sample=False)[0]['summary_text']
     return summary
     
