@@ -13,7 +13,7 @@ pip install -r requirements.txt
 ## Usage
 In bash terminal type the follwing commands to deploy it locally.
 ```
-export FLASK_APP-app.py
+export FLASK_APP=app.py
 flask run
 ```
 ## Images
